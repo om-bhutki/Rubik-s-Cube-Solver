@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubik's Cube Solver</title>
+    <link rel="stylesheet" href="cube.css">
+</head>
+<body>
+    <div id="header">
+        Rubik's Cube Solver
+    </div>
+    <div id="colortabs">
+        <div class="tab" id="t1"></div>
+        <div class="tab" id="t2"></div>
+        <div class="tab" id="t3"></div>
+        <div class="tab" id="t4"></div>
+        <div class="tab" id="t5"></div>
+        <div class="tab" id="t6"></div>
+    </div>
+    <div id="cubemap">
+        <div id="toplayer" class="layer">
+            <div class="cubebox">
+                <div class="box" id="u1"></div>
+                <div class="box" id="u2"></div>
+                <div class="box" id="u3"></div>
+                <div class="box" id="u4"></div>
+                <div class="box" id="u5"></div>
+                <div class="box" id="u6"></div>
+                <div class="box" id="u7"></div>
+                <div class="box" id="u8"></div>
+                <div class="box" id="u9"></div>
+            </div>
+        </div>
+        <div id="midlayer" class="layer">
+            <div class="cubebox">
+                <div class="box" id="l1"></div>
+                <div class="box" id="l2"></div>
+                <div class="box" id="l3"></div>
+                <div class="box" id="l4"></div>
+                <div class="box" id="l5"></div>
+                <div class="box" id="l6"></div>
+                <div class="box" id="l7"></div>
+                <div class="box" id="l8"></div>
+                <div class="box" id="l9"></div>
+            </div>
+            <div class="cubebox">
+                <div class="box" id="f1"></div>
+                <div class="box" id="f2"></div>
+                <div class="box" id="f3"></div>
+                <div class="box" id="f4"></div>
+                <div class="box" id="f5"></div>
+                <div class="box" id="f6"></div>
+                <div class="box" id="f7"></div>
+                <div class="box" id="f8"></div>
+                <div class="box" id="f9"></div>
+            </div>
+            <div class="cubebox">
+                <div class="box" id="r1"></div>
+                <div class="box" id="r2"></div>
+                <div class="box" id="r3"></div>
+                <div class="box" id="r4"></div>
+                <div class="box" id="r5"></div>
+                <div class="box" id="r6"></div>
+                <div class="box" id="r7"></div>
+                <div class="box" id="r8"></div>
+                <div class="box" id="r9"></div>
+            </div>
+            <div class="cubebox">
+                <div class="box" id="b1"></div>
+                <div class="box" id="b2"></div>
+                <div class="box" id="b3"></div>
+                <div class="box" id="b4"></div>
+                <div class="box" id="b5"></div>
+                <div class="box" id="b6"></div>
+                <div class="box" id="b7"></div>
+                <div class="box" id="b8"></div>
+                <div class="box" id="b9"></div>
+            </div>
+        </div>
+        <div id="bottomlayer" class="layer">
+            <div class="cubebox">
+                <div class="box" id="d1"></div>
+                <div class="box" id="d2"></div>
+                <div class="box" id="d3"></div>
+                <div class="box" id="d4"></div>
+                <div class="box" id="d5"></div>
+                <div class="box" id="d6"></div>
+                <div class="box" id="d7"></div>
+                <div class="box" id="d8"></div>
+                <div class="box" id="d9"></div>
+            </div>
+        </div>
+    </div>
+    <div id="btns">
+        <div id="reset" class="button">Reset</div>
+        <div id="solve" class="button">Solve</div>
+    </div>
+    <div id="solution">Solution appears here...</div>
+    <div id="footer">
+        By shanouf, Om, Yash
+    </div>
+    <script src="cube.js"></script>
+</body>
+</html>

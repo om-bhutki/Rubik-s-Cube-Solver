@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.box:hover{
+    cursor: pointer;
+}
+
+.cubebox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+}
+
+#cubemap{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    background-color: #d9d9ff;
+}
+
+.layer{
+    display: flex;
+}
+
+#midlayer{
+    justify-content: center;
+}
+
+#bottomlayer{
+    justify-content: center;
+    position: relative;
+    right: 110px;
+    top: 1px;
+}
+
+#toplayer{
+    justify-content: center;
+    position: relative;
+    right: 110px;
+    bottom: 0.5px;
+}
+
+#header{
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #020256;
+}
+
+#footer{
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: #020256;
+}
+
+#solution{
+    font-size: 22px;
+    padding: 5px;
+    background-color: #b0b0ff;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#colortabs{
+    display: flex;
+    justify-content: center;
+    background-color: #b0b0ff;
+}
+
+.tab{
+    width: 130px;
+    height: 45px;
+    border: 2px solid black;
+    margin: 25px 30px;
+    border-radius: 10px;
+}
+
+.tab:hover{
+    cursor: pointer;
+}
+
+#t1{
+    background-color: red;
+}
+
+#t2{
+    background-color: white;
+}
+
+#t3{
+    background-color: yellow;
+}
+
+#t4{
+    background-color: orange;
+}
+
+#t5{
+    background-color: green;
+}
+
+#t6{
+    background-color: blue;
+}
+
+.button{
+    width: 345px;
+    height: 40px;
+    background-color: #020256;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 3px;
+    margin: 0 150px;
+}
+
+#btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 108px;
+    background-color: #d9d9ff;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #01013a;
+}
